@@ -6025,7 +6025,34 @@
                         "both": "Both"
                     },
                     "default_value": "normal",
-                    "settable_per_mesh": true
+                    "settable_per_mesh": true,
+                    "children":
+                    {
+                        "magic_mesh_surface_mode_connect_segment_distance":
+                        {
+                            "label": "Segment Distance",
+                            "description": "The segment distance to search for connect in surface mode",
+                            "unit": "mm",
+                            "type": "float",
+                            "minimum_value": "0",
+                            "maximum_value_warning": "1.0",
+                            "default_value": 0,
+                            "enabled": "any(p == 'surface' for p in extruderValues('magic_mesh_surface_mode'))",
+                            "settable_per_mesh": true
+                        },
+                        "magic_mesh_surface_mode_connect_segment_cell":
+                        {
+                            "label": "Segment Cell",
+                            "description": "The segment cell to search for connect in surface mode",
+                            "unit": "mm",
+                            "type": "float",
+                            "minimum_value": "0",
+                            "maximum_value_warning": "2.0",
+                            "value": "magic_mesh_surface_mode_connect_segment_distance * 2",
+                            "enabled": "any(p == 'surface' for p in extruderValues('magic_mesh_surface_mode'))",
+                            "settable_per_mesh": true
+                        }
+                    }
                 },
                 "magic_spiralize":
                 {
