@@ -6030,7 +6030,7 @@
                     {
                         "magic_mesh_surface_mode_connect_segment_distance":
                         {
-                            "label": "Segment Distance",
+                            "label": "Segment Merge Distance",
                             "description": "The segment distance to search for connect in surface mode",
                             "unit": "mm",
                             "type": "float",
@@ -6042,13 +6042,12 @@
                         },
                         "magic_mesh_surface_mode_connect_segment_cell":
                         {
-                            "label": "Segment Cell",
+                            "label": "Segment Merge Cell",
                             "description": "The segment cell to search for connect in surface mode",
                             "unit": "mm",
                             "type": "float",
                             "minimum_value": "0",
-                            "maximum_value_warning": "2.0",
-                            "value": "magic_mesh_surface_mode_connect_segment_distance * 2",
+                            "maximum_value_warning": "1.0",
                             "enabled": "any(p == 'surface' for p in extruderValues('magic_mesh_surface_mode'))",
                             "settable_per_mesh": true
                         }
