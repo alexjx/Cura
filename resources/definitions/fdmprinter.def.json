@@ -4911,6 +4911,15 @@
                     "enabled": "support_enable or support_tree_enable",
                     "settable_per_mesh": false
                 },
+                "support_apply_bridge_setting":
+                {
+                    "label": "Apply Bridge Setting to Support Area",
+                    "description": "When enabled, the support settings will be applied to supported area.",
+                    "type": "bool",
+                    "default_value": true,
+                    "enabled": "support_enable or support_tree_enable",
+                    "settable_per_mesh": true
+                },
                 "support_supported_skin_fan_speed":
                 {
                     "label": "Supported Skin Fan Speed",
