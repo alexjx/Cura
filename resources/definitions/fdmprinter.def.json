@@ -7375,7 +7375,10 @@
                     "default_value": 25,
                     "value": "bridge_skin_speed",
                     "enabled": "bridge_settings_enabled and bridge_enable_more_layers",
-                    "settable_per_mesh": true
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false,
+                    "settable_globally": false
                 },
                 "bridge_skin_material_flow_2":
                 {
@@ -7389,7 +7392,10 @@
                     "minimum_value_warning": "50",
                     "maximum_value_warning": "150",
                     "enabled": "bridge_settings_enabled and bridge_enable_more_layers",
-                    "settable_per_mesh": true
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false,
+                    "settable_globally": false
                 },
                 "bridge_skin_density_2":
                 {
