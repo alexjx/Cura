@@ -3750,6 +3750,19 @@
                     "settable_per_mesh": false,
                     "settable_per_extruder": true
                 },
+                "retraction_extra_prime_length":
+                {
+                    "label": "Retraction Extra Prime Length",
+                    "description": "Some material can ooze away during a travel move, which can be compensated for here.",
+                    "unit": "mm",
+                    "type": "float",
+                    "default_value": 0,
+                    "minimum_value_warning": "-0.0001",
+                    "maximum_value_warning": "5.0",
+                    "enabled": "retraction_enable and machine_firmware_retract",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true
+                },
                 "retraction_min_travel":
                 {
                     "label": "Retraction Minimum Travel",
