@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "DWmaker 2 Extended+ (Duet)",
+    "name": "DWmaker Z6",
     "inherits": "ultimaker2_extended_plus",
     "metadata": {
         "visible": true,
@@ -19,23 +19,19 @@
     },
     "overrides": {
         "machine_name": {
-            "default_value": "DWMaker 2 Extended+ (Duet)"
+            "default_value": "DWMaker Z6"
         },
         "machine_disallowed_areas": {
             "default_value": []
         },
-        "machine_gcode_flavor": {
-            "default_value": "RepRap (Marlin/Sprinter)"
+        "machine_width": {
+            "default_value": 320
         },
-        "machine_firmware_retract": {
-            "value": true,
-            "default_value": true,
-            "enabled": true
+        "machine_depth": {
+            "default_value": 320
         },
-        "relative_extrusion": {
-            "default_value": false,
-            "value": "machine_gcode_flavor==\"RepRap (RepRap)\"",
-            "enabled": true
+        "machine_height": {
+            "default_value": 400
         }
     }
 }
