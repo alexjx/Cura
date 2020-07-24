@@ -4046,6 +4046,15 @@
                             "value": "max(1, int(math.floor((cool_fan_full_at_height - resolveOrValue('layer_height_0')) / resolveOrValue('layer_height')) + 2))",
                             "settable_per_mesh": false,
                             "settable_per_extruder": true
+                        },
+                        "cool_fan_full_layer_no_interpolation":
+                        {
+                            "label": "Do not interpolate fan speed",
+                            "description": "Use initial fan speed instead of interpolate the fan speed below full speed layers",
+                            "type": "bool",
+                            "default_value": false,
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": true
                         }
                     }
                 },
