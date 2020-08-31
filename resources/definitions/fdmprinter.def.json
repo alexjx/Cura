@@ -5119,7 +5119,7 @@
                     "description": "When enabled, the support settings will be applied to supported area.",
                     "type": "bool",
                     "default_value": true,
-                    "enabled": "support_enable or support_tree_enable",
+                    "enabled": "support_enable",
                     "settable_per_mesh": true
                 },
                 "support_supported_skin_fan_speed":
