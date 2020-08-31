@@ -26,8 +26,8 @@
             "default_value": "RepRap (RepRap)"
         },
         "machine_firmware_retract": {
-            "value": true,
-            "default_value": true,
+            "value": false,
+            "default_value": false,
             "enabled": true
         },
         "relative_extrusion": {
