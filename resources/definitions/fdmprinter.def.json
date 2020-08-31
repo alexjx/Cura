@@ -3757,7 +3757,7 @@
                             "enabled": "retraction_enable and machine_gcode_flavor != \"UltiGCode\"",
                             "value": "retraction_speed * 60",
                             "settable_per_mesh": false,
-                            "settable_per_extruder": false,
+                            "settable_per_extruder": true,
                             "settable_per_meshgroup": false,
                             "settable_globally": false
                         },
@@ -3775,8 +3775,7 @@
                             "enabled": "retraction_enable and machine_gcode_flavor != \"UltiGCode\"",
                             "value": "retraction_speed * 60",
                             "settable_per_mesh": false,
-                            "settable_per_extruder": false,
-                            "settable_per_meshgroup": false,
+                            "settable_per_extruder": true,
                             "settable_globally": false
                         }
                     }
