@@ -3742,6 +3742,42 @@
                             "value": "retraction_speed",
                             "settable_per_mesh": false,
                             "settable_per_extruder": true
+                        },
+                        "retraction_retract_speed_2":
+                        {
+                            "label": "Retraction Retract Speed (mm/min)",
+                            "description": "The speed at which the filament is retracted during a retraction move.",
+                            "unit": "mm/min",
+                            "type": "float",
+                            "default_value": 1500,
+                            "minimum_value": "0.0001",
+                            "maximum_value": "machine_max_feedrate_e * 60 if retraction_enable else float('inf')",
+                            "minimum_value_warning": "60",
+                            "maximum_value_warning": "4200",
+                            "enabled": "retraction_enable and machine_gcode_flavor != \"UltiGCode\"",
+                            "value": "retraction_speed * 60",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "settable_per_meshgroup": false,
+                            "settable_globally": false
+                        },
+                        "retraction_prime_speed_2":
+                        {
+                            "label": "Retraction Prime Speed (mm/min)",
+                            "description": "The speed at which the filament is primed during a retraction move.",
+                            "unit": "mm/min",
+                            "type": "float",
+                            "default_value": 1500,
+                            "minimum_value": "0.0001",
+                            "maximum_value": "machine_max_feedrate_e * 60 if retraction_enable else float('inf')",
+                            "minimum_value_warning": "60",
+                            "maximum_value_warning": "4200",
+                            "enabled": "retraction_enable and machine_gcode_flavor != \"UltiGCode\"",
+                            "value": "retraction_speed * 60",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "settable_per_meshgroup": false,
+                            "settable_globally": false
                         }
                     }
                 },
@@ -3755,6 +3791,19 @@
                     "minimum_value_warning": "-0.0001",
                     "maximum_value_warning": "5.0",
                     "enabled": "retraction_enable",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true
+                },
+                "retraction_extra_prime_length":
+                {
+                    "label": "Retraction Extra Prime Length",
+                    "description": "Some material can ooze away during a travel move, which can be compensated for here.",
+                    "unit": "mm",
+                    "type": "float",
+                    "default_value": 0,
+                    "minimum_value_warning": "-0.0001",
+                    "maximum_value_warning": "5.0",
+                    "enabled": "retraction_enable and machine_firmware_retract",
                     "settable_per_mesh": false,
                     "settable_per_extruder": true
                 },
@@ -7346,7 +7395,10 @@
                     "default_value": 25,
                     "value": "bridge_skin_speed",
                     "enabled": "bridge_settings_enabled and bridge_enable_more_layers",
-                    "settable_per_mesh": true
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false,
+                    "settable_globally": false
                 },
                 "bridge_skin_material_flow_2":
                 {
@@ -7360,7 +7412,10 @@
                     "minimum_value_warning": "50",
                     "maximum_value_warning": "150",
                     "enabled": "bridge_settings_enabled and bridge_enable_more_layers",
-                    "settable_per_mesh": true
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": false,
+                    "settable_per_meshgroup": false,
+                    "settable_globally": false
                 },
                 "bridge_skin_density_2":
                 {
