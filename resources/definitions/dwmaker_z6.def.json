@@ -1,13 +1,13 @@
 {
     "version": 2,
-    "name": "DWmaker Z6",
+    "name": "3D Printer 3",
     "inherits": "ultimaker2_extended_plus",
     "metadata": {
         "visible": true,
-        "author": "DWMaker",
-        "manufacturer": "DWMaker",
+        "author": "PRO 3DP 1",
+        "manufacturer": "PRO 3DP 1",
         "quality_definition": "ultimaker2_plus",
-        "weight": 3,
+        "weight": 13,
         "file_formats": "text/x-gcode",
         "platform": "dwmaker_z6_platform.obj",
         "platform_texture": "Ultimaker2ExtendedPlusbackplate.png",
@@ -17,7 +17,7 @@
     },
     "overrides": {
         "machine_name": {
-            "default_value": "DWMaker Z6"
+            "default_value": "3D Printer 3"
         },
         "machine_disallowed_areas": {
             "default_value": []

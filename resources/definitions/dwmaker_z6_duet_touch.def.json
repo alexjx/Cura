@@ -1,10 +1,23 @@
 {
     "version": 2,
-    "name": "DWmaker Z6 (Duet Touch)",
+    "name": "PRO 3DP Plus",
     "inherits": "dwmaker_z6_duet",
+    "metadata": {
+        "visible": true,
+        "author": "PRO 3DP",
+        "manufacturer": "PRO 3DP",
+        "quality_definition": "ultimaker2_plus",
+        "weight": 2,
+        "file_formats": "text/x-gcode",
+        "platform": "ultimaker2_platform.obj",
+        "platform_texture": "Ultimaker2ExtendedPlusbackplate.png",
+        "machine_extruder_trains": {
+            "0": "dwmaker2_extended_plus_extruder_0"
+        }
+    },
     "overrides": {
         "machine_name": {
-            "default_value": "DWMaker Z6 (Duet Touch)"
+            "default_value": "PRO 3DP Plus"
         },
         "machine_disallowed_areas": {
             "default_value": []

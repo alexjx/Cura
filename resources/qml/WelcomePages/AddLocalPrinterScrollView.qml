@@ -21,10 +21,10 @@ Item
                               ? machineList.model.getItem(machineList.currentIndex)
                               : null
     // The currently active (expanded) section/category, where section/category is the grouping of local machine items.
-    property string currentSection: "DWMaker"
+    property string currentSection: "PRO 3DP"
     // By default (when this list shows up) we always expand the "Ultimaker" section.
     property var preferredCategories: {
-        "DWMaker": -3,
+        "PRO 3DP": -3,
         "Ultimaker B.V.": -2,
         "Custom": -1
     }

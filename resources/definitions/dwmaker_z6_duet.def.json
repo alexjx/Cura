@@ -1,10 +1,23 @@
 {
     "version": 2,
-    "name": "DWmaker Z6 (Duet)",
+    "name": "3D Printer 2",
     "inherits": "dwmaker_z6",
+    "metadata": {
+        "visible": true,
+        "author": "PRO 3DP 1",
+        "manufacturer": "PRO 3DP 1",
+        "quality_definition": "ultimaker2_plus",
+        "weight": 12,
+        "file_formats": "text/x-gcode",
+        "platform": "dwmaker_z6_platform.obj",
+        "platform_texture": "Ultimaker2ExtendedPlusbackplate.png",
+        "machine_extruder_trains": {
+            "0": "dwmaker_z6_extruder_0"
+        }
+    },
     "overrides": {
         "machine_name": {
-            "default_value": "DWMaker Z6 (Duet)"
+            "default_value": "3D Printer 2"
         },
         "machine_disallowed_areas": {
             "default_value": []
